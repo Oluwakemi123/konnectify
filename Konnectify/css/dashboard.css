@@ -1,0 +1,190 @@
+a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+.bi.bi-forward-fill{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E2E05;
+}
+#log{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6E2E05;
+  margin-bottom: 100%;
+}
+
+#credit{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6E2E05;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin-bottom: 0;
+}
+#password-field{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3A3A3A;
+    padding-left: 5%;
+
+}
+.field-icon {
+    float: right;
+    margin-right:6%;
+    margin-top: -25px;
+    z-index: 2;
+}
+#due{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #3A3A3A;
+    padding-left: 5%;
+    padding-top: 13%;
+    padding-bottom: 20%;
+}
+.borrow{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #3A3A3A;
+    background-color: white;!important;
+    border-radius: 7px;
+
+
+}
+.loan{
+    ont-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+#on{
+    background-color: white;
+    border-bottom: 2px solid white;
+    border-radius: 7px;
+    margin-bottom: 7%;
+}
+
+#add{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5A5956;
+    padding-top: 5%;
+    padding-left: 5%;
+
+}
+#your{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(90, 89, 86, 0.56);
+}
+label{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.btn.btn-primary2{
+    background-color: #C4C4C4;!important;
+    margin-bottom: 15%;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.btn.btn-primary2:hover{
+    background-color: #C4C4C4;!important;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+#login{
+    width: 75%;
+    border: none!important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+.card{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border: none!important;
+    color: rgba(90, 89, 86, 0.63);
+}
+.btn.btn-primary1{
+    background-color: #C4C4C4;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+.btn.btn-primary1:hover {
+    background-color: #60CA6B;!important;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+#register{
+    margin-top: 7%;
+    margin-bottom:15%;
+    width: 75%;
+    border: none!important;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.bx.bx-show{
+    float: right;
+    margin-right:6%;!important;
+    margin-top: -25px;!important;
+    z-index: 2;
+    font-size: 25px;
+}
+.bx.bx-hide{
+    float: right;
+    margin-right:6%;!important;
+    margin-top: -25px;!important;
+    z-index: 2;
+    font-size: 25px;
+}
