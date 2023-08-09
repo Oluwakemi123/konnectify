@@ -1,0 +1,93 @@
+:root{
+    --color_span: #60CA6B;
+}
+
+
+#logo{
+    text-align:right ;
+    padding-top:10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+}
+#stay{
+    margin-top: 12%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px ;
+}
+#monthly{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 5%;
+}
+.btn.btn-primary2{
+    background-color: #60CA6B;
+    color: white;
+}
+.btn.btn-primary2:hover{
+    background-color: #60CA6B;
+    color: white;
+}
+#man{
+    text-align: center;
+    padding-top: 20%;
+}
+#provide{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+}
+#Now{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size:16px;
+}
+.contact{
+    color: #60CA6B;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+.email{
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.info{
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.span_color{
+    color: var(--color_span);
+}
+
+.span_color.brand_name{
+    text-decoration: underline;
+}
+
+.btn.btn-primary2:active{
+    background-color: #60CA6B;
+}

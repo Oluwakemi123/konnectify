@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="/konnectify/Konnectify/css/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Credit%20history.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -13,188 +13,175 @@
 </head>
 <body style="background-color: rgba(96, 202, 107, 0.09)">
 
-<div  class="fixed-top">
-    <div  class="shadow-lg p-4 mb-3 bg-body rounded">
+    <div  class="fixed-top">
+        <div  class="shadow-lg p-4 mb-3 bg-body rounded">
 
-        <nav style="background-color: white!important; color: #60CA6B!important;"  class="navbar -light-color fixed-top py-lg-3 ">
-            <div class="container-fluid">
-                <img width="150px" height="40px" src="Group%20136.png">
-                <button style="color: #60CA6B!important;border: none!important;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span style="color: green!important" class="navbar-toggler-icon"></span>
-                </button>
-                <div style="background-color:  #F1FAF2 " class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <div>
-                            <h5 ><img height="50px" width="50px" src="   Group%20109.png">Rasheed Ogunbakinde <button style="font-size: 10px" type="button"
-                                                                                                                      class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></h5>
-
-
+            <nav style="background-color: white!important; color: #60CA6B!important;"  class="navbar -light-color fixed-top py-lg-3 ">
+                <div class="container-fluid">
+                    <img width="150px" height="40px" src="Group%20136.png">
+                    <button style="color: #60CA6B!important;border: none!important;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span style="color: green!important" class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="background-color:  #F1FAF2 " class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
                             <div>
+                                <h5 ><img height="50px" width="50px" src="   Group%20109.png">Rasheed Ogunbakinde <button style="font-size: 10px" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></h5>
 
-                            </div>
-                            <hr>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <hr>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-                                    <li>
-                                        <a  class="nav-link active" aria-current="page" href="Dash%202.html"><i style="font-size: 20px" class="bi bi-wifi-2"></i>Borrow Data</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a style="padding-bottom: 99%" class="nav-link active" href="#"><i style="font-size: 20px" class="bi bi-credit-card"></i> Credit History</a>
-                                    </li>
-                                    <li>
-                                        <a  class="nav-link active" id="log"href="index.html"><i style="font-size: 20px" class="bi bi-forward-fill"></i>Log Out</a>
-                                    </li>
-                                </ul>
-
-                                <ul>
-
-                                </ul>
-
+                                        <li>
+                                            <a  class="nav-link active" aria-current="page" href="Dash%202.html"><i style="font-size: 20px" class="bi bi-wifi-2"></i>Borrow Data</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a style="padding-bottom: 99%" class="nav-link active" href="#"><i style="font-size: 20px" class="bi bi-credit-card"></i> Credit History</a>
+                                        </li>
+                                        <li>
+                                            <a  class="nav-link active" id="log"href="index.html"><i style="font-size: 20px" class="bi bi-forward-fill"></i>Log Out</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </nav>
+        </div>
+    </div>
+
+    <div style="margin-top: 25%"  class="container-fluid">
+        <div style=" background-image: url('Group%20105.png');background-repeat: no-repeat;background-size: 100%">
+            <p   id="credit">Credit worthiness</p>
+            <a onclick="changeIcon(this)" id="myBtn">
+                <i id="faPlus" class='bx bx-show'></i>
+                <span id="password-field" class="SPN" data-text="₦10,000.00">₦10,000.00</span>
+            </a>
+            <p id="due">***** 56741</p>
+        </div>
+    </div>
+
+
+    <div  class="container-fluid">
+        <p class="borrow">Credit History</p>
+
+
+        <div id="on">
+            <p style="float: left;margin-left: 4%;padding-top: 2px; color: rgba(90, 89, 86, 0.63)"; class="loan">Loan on: </p><p style="float: right;padding-right: 4%">
+            <a href="Dashboard.html"><i style="text-align: center!important;color: #60CA6B;font-size: 15px" class="bi bi-plus-circle-fill"></i></a></p><br/><hr/>
+            <p style=" color: rgba(90, 89, 86, 0.63);"  class="loan">RASHEED OLASUNKANMI OGUNBAKINDE </p>
+            <p class="card" style="text-align: center;padding-bottom:10%">Card Number:   *********56741<br/>Account No.:   *********7734</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p class="recent">Recent Transactions</p>
+    </div>
+
+    <div style="background-color: white">
+        <p class="credit">Data Top-Up</p>
+
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div>
+            <p class="airtel">Airtel ₦2000/3Gb</p>
+                    <p class="number">09079100063</p>
+                    </div>
             </div>
-        </nav>
-    </div>
-</div>
+            <div class="col">
+            <p class="number">02-03-2023</p>
+            </div>
+            <div class="col">
+                <p style="color: #60CA6B" class="number">Successful</p>
+            </div>
+        </div>
 
-<div style="margin-top: 25%"  class="container-fluid">
-    <div style=" background-image: url('Group%20105.png');background-repeat: no-repeat;background-size: 100%">
-        <p   id="credit">Credit worthiness</p>
-        <a onclick="changeIcon(this)" id="myBtn">
-            <i style="" id="faPlus" class='bx bx-show'></i>
-            <span id="password-field" class="SPN" data-text="₦10,000.00">₦10,000.00</span>
-        </a>
-        <p id="due">***** 56741</p>
-    </div>
-</div>
-
-
-<div  class="container-fluid">
-    <p class="borrow">Credit History</p>
-
-
-    <div id="on">
-        <p style="float: left;margin-left: 4%;padding-top: 2px; color: rgba(90, 89, 86, 0.63)"; class="loan">Loan on: </p><p style="float: right;padding-right: 4%">
-        <a href="Dashboard.html"><i style="text-align: center!important;color: #60CA6B;font-size: 15px" class="bi bi-plus-circle-fill"></i></a></p><br/><hr/>
-        <p style=" color: rgba(90, 89, 86, 0.63);"  class="loan">RASHEED OLASUNKANMI OGUNBAKINDE </p>
-        <p class="card" style="text-align: center;padding-bottom:10%">Card Number:   *********56741<br/>Account No.:   *********7734</p>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <p class="recent">Recent Transactions</p>
-</div>
-
-<div style="background-color: white">
-    <p class="credit">Data Top-Up</p>
-
-</div>
-
-<div class="container text-center">
-    <div class="row">
-        <div class="col">
-            <div>
-           <p class="airtel">Airtel ₦2000/3Gb</p>
-                <p class="number">09079100063</p>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="airtel">Airtel ₦2000/3Gb</p>
+                    <p class="number">09079100063</p>
                 </div>
-        </div>
-        <div class="col">
-           <p class="number">02-03-2023</p>
-        </div>
-        <div class="col">
-            <p style="color: #60CA6B" class="number">Successful</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <div>
-                <p class="airtel">Airtel ₦2000/3Gb</p>
-                <p class="number">09079100063</p>
+            </div>
+            <div class="col">
+                <p class="number">02-03-2023</p>
+            </div>
+            <div class="col">
+                <p style="color: #FF353D" class="number">Failed</p>
             </div>
         </div>
-        <div class="col">
-            <p class="number">02-03-2023</p>
-        </div>
-        <div class="col">
-            <p style="color: #FF353D" class="number">Failed</p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <div>
-                <p class="airtel">Airtel ₦2000/3Gb</p>
-                <p class="number">09079100063</p>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="airtel">Airtel ₦2000/3Gb</p>
+                    <p class="number">09079100063</p>
+                </div>
+            </div>
+            <div class="col">
+                <p class="number">02-03-2023</p>
+            </div>
+            <div class="col">
+                <p style="color:rgba(164, 128, 1, 0.78);" class="number">Pending</p>
             </div>
         </div>
-        <div class="col">
-            <p class="number">02-03-2023</p>
-        </div>
-        <div class="col">
-            <p style="color:rgba(164, 128, 1, 0.78);" class="number">Pending</p>
-        </div>
     </div>
-</div>
 
-<div style="background-color: white">
-    <p class="credit">Recent Transactions</p>
+    <div style="background-color: white">
+        <p class="credit">Recent Transactions</p>
 
-</div>
+    </div>
 
-<div class="container text-center">
-    <div class="row">
-        <div class="col">
-            <div>
-                <p class="airtel">₦2050</p>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="airtel">₦2050</p>
+                </div>
+            </div>
+            <div class="col">
+                <p class="number">02-03-2023</p>
+            </div>
+            <div class="col">
+                <p class="number">Direct Debit</p>
             </div>
         </div>
-        <div class="col">
-            <p class="number">02-03-2023</p>
-        </div>
-        <div class="col">
-            <p class="number">Direct Debit</p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <div>
-                <p class="airtel">₦2050</p>
-                <p class="number">09079100063</p>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <p class="airtel">₦2050</p>
+                    <p class="number">09079100063</p>
+                </div>
+            </div>
+            <div class="col">
+                <p class="number">02-03-2023</p>
+            </div>
+            <div class="col">
+                <p class="number">Transfer</p>
             </div>
         </div>
-        <div class="col">
-            <p class="number">02-03-2023</p>
-        </div>
-        <div class="col">
-            <p class="number">Transfer</p>
+
+    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+                <p><a href=" https://wa.me/2347083575049"><img  width="180px" height="50px" src="Group%20128.png"></a></p>
+            </div>
         </div>
     </div>
 
-</div>
-<div class="container text-center">
-    <div class="row align-items-start">
-        <div class="col">
-        </div>
-        <div class="col">
-        </div>
-        <div class="col">
-            <p><a href=" https://wa.me/2347083575049"><img  width="180px" height="50px" src="Group%20128.png"></a></p>
-        </div>
-    </div>
-
-
-
-
-</div>
 </body>
 
 
-<script src="dash.js" rel="script"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/konnectify/Konnectify/js/dash.js" rel="script"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </html>
